@@ -2,7 +2,6 @@ package proj.omnix.controllers;
 
 import proj.dtos.InvestigationData;
 import proj.omnix.proxies.RecommendationServiceProxy;
-import proj.responses.RecommendationResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -19,6 +18,8 @@ public class AnalyticsController {
     public AnalyticsController(RecommendationServiceProxy recommendationServiceProxy) {
         this.recommendationServiceProxy = recommendationServiceProxy;
     }
+
+
 
     @GetMapping("/getRecommendation")
     public String getRecommendation(@RequestBody InvestigationData investigation){
