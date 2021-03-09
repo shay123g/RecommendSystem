@@ -1,6 +1,5 @@
 package proj.omnix.proxies;
 
-import proj.dtos.InvestigationData;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 
@@ -10,5 +9,5 @@ import java.util.List;
 public interface RecommendationServiceProxy {
 
     @GetMapping("/getRecommendation")
-    public List<String> getRecommendationFromRecommendationSystem(InvestigationData investigationData);
+    public List<String> getRecommendationFromRecommendationSystem();
 }

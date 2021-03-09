@@ -1,6 +1,5 @@
 package proj.Recommendationsystem.controllers;
 
-import org.hibernate.service.spi.InjectService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import proj.Recommendationsystem.entities.Recommendation;
